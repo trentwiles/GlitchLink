@@ -9,7 +9,7 @@ fi
 echo "NOTICE!! Please note this script will wipe the directory it is ran in. Cancel it with CRTL+C if you don't want that to happen. \n"
 
 echo "What is your project's git url? (tools->import/export) \n"
-read giturl
+read  -n 1 -p "$" giturl
 
 rm -rf *
 git branch -M glitch
